@@ -1,0 +1,106 @@
+/* Global Styles */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Container */
+.card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Headings */
+h1, h2 {
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Inputs */
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+/* Equipment List */
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+/* Buttons inside list items */
+li button {
+  width: auto;
+  margin-left: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+li button:first-of-type {
+  background-color: #28a745; /* Borrow/Approve */
+}
+
+li button:last-of-type {
+  background-color: #dc3545; /* Delete/Return */
+}
+
+li button:hover {
+  opacity: 0.9;
+}
+
+/* Logout button */
+.card > button:last-child {
+  background-color: #555;
+  margin-top: 20px;
+}
